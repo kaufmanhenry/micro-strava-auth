@@ -1,0 +1,22 @@
+{
+  "name": "micro-strava-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hcjk/micro-strava-auth.git",
+  "author": "Henry Kaufman <hkaufman19@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "test": "standard",
+    "dev": "nodemon --exec \"npm start\" -e \"js\""
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "dotenv": "^4.0.0",
+    "micro": "^9.0.0",
+    "micro-redirect": "^1.0.0",
+    "microrouter": "^2.2.3",
+    "qs": "^6.5.1",
+    "uid-promise": "^1.0.0"
+  }
+}
