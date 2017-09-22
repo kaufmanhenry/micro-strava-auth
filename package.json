@@ -1,5 +1,6 @@
 {
   "name": "micro-strava-auth",
+  "description": "A microservice for OAuth with Strava.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/hcjk/micro-strava-auth.git",
