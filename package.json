@@ -6,11 +6,6 @@
   "repository": "https://github.com/hcjk/micro-strava-auth.git",
   "author": "Henry Kaufman <hkaufman19@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "start": "micro",
-    "test": "standard",
-    "dev": "nodemon --exec \"npm start\" -e \"js\""
-  },
   "dependencies": {
     "axios": "^0.16.2",
     "dotenv": "^4.0.0",
@@ -21,6 +16,7 @@
     "uid-promise": "^1.0.0"
   },
   "devDependencies": {
+    "@now/node": "^0.12.5",
     "eslint": "5.3.0",
     "eslint-config-airbnb": "17.1.1",
     "eslint-plugin-import": "^2.18.0",
