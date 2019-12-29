@@ -24,12 +24,12 @@ module.exports = async (req, res) => {
     method: 'post',
     url: `${stravaUrl}token?${qs.stringify(qsParams)}`,
   })
-    .then((response) => {
+    .then(response => {
       const data = qs.parse(response.data);
 
       return redirectWithQueryString(res, data);
     })
-    .catch((err) => {
+    .catch(err => {
       console.error(err);
       return redirectWithQueryString(res, err);
     });
