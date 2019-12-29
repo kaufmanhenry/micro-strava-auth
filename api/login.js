@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
     client_id: process.env.STRAVA_CLIENT_ID,
     redirect_uri: `http://${req.headers.host}/callback`,
     response_type: 'code',
+    scope: 'activity:read',
   };
   const location = `${stravaUrl}authorize?${qs.stringify(qsParams)}`;
 

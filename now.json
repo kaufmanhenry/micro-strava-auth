@@ -20,5 +20,10 @@
       "src": "/callback",
       "dest": "api/callback.js"
     }
-  ]
+  ],
+  "env": {
+    "STRAVA_CLIENT_ID": "@strava-heat-client-id",
+    "STRAVA_CLIENT_SECRET": "@strava-heat-client-secret",
+    "STRAVA_REDIRECT": "http://localhost:3001/login"
+  }
 }

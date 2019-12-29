@@ -6,11 +6,11 @@ const redirectWithQueryString = require('../util/redirectWithQueryString');
 const stravaUrl = 'https://www.strava.com/oauth/';
 
 module.exports = async (req, res) => {
-  const { code, state } = req.query;
+  const { code } = req.query;
 
-  if (!code || !state) {
+  if (!code) {
     return redirectWithQueryString(res, {
-      error: 'A response code and a state are required in order to authorize.',
+      error: 'A response code is required in order to authorize.',
     });
   }
 
@@ -30,7 +30,6 @@ module.exports = async (req, res) => {
       return redirectWithQueryString(res, data);
     })
     .catch(err => {
-      console.error(err);
       return redirectWithQueryString(res, err);
     });
 };
